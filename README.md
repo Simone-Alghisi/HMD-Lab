@@ -7,6 +7,11 @@ Official repository for the [Human-Machine Dialogue (HMD)](https://disi.unitn.it
 > For any issue, write an email to s.alghisi@unitn.it and include mahed.mousavi@unitn.it in cc.
 
 - [Getting started](#getting-started)
+  - [Azure](#azure)
+    - [Setup](#setup)
+    - [Log in](#log-in)
+    - [VSCode (optional)](#vscode-optional)
+  - [Clone the Repo](#clone-the-repo)
   - [Installation](#installation)
   - [Create Hugging Face access token](#create-hugging-face-access-token)
 - [Running the code](#running-the-code)
@@ -16,11 +21,46 @@ Official repository for the [Human-Machine Dialogue (HMD)](https://disi.unitn.it
 
 ## Getting started
 This section guides you through the necessary steps to run the code.
+### Azure
+As a first step, you need to register with Azure and log in to your virtual machine.
+
+> [!CAUTION]
+> Remember to **turn off** your virtual machine on Azure every time you finish using it to avoid unnecessary resource usage.
+
+#### Setup
+You should have received an email on your Unitn account. Open it and follow the steps below:
+1. Click on the **"Register for the lab"** button.
+2. Log in using your **Unitn email** credentials.
+3. On the Azure Lab Services page, click the **slider** to turn on your virtual machine.
+4. Click the **monitor icon** on the right of the slider, set a **password**, and **save it** for later use.
+
+#### Log in
+You can access your machine by logging in to [Azure Lab Services](https://labs.azure.com) using your Unitn account, then:
+
+1. Click the **slider** to power on your machine.
+2. Click the **monitor icon** on the right of the slider and copy the provided **SSH command**.
+3. Open a terminal, paste the command, confirm adding the host to your known list, and log in using the password you set earlier.
+
+#### VSCode (optional)
+You can also log in directly from Visual Studio Code (VSCode) using the following procedure:
+
+1. From the main menu, click **"Connect to..."**
+2. In the dropdown menu, select **"Connect to Host..."**
+3. Choose **"Add New SSH Host..."**
+4. Paste the SSH command.
+5. Add it to the default SSH configuration.
+6. Repeat steps 1 and 2, then connect to the new host using the password saved earlier.
+
+### Clone the Repo
+You can clone this repository by running the following command:
+```bash
+git clone https://github.com/Simone-Alghisi/HMD-Lab.git
+```
 
 ### Installation
 
 > [!IMPORTANT]
-> Ensure that you have [conda](https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions) installed before proceeding.
+> Ensure that you have [conda](https://www.anaconda.com/docs/getting-started/miniconda/install#linux-2) installed before proceeding.
 
 Create a Python environment using the following command:
 ```shell
