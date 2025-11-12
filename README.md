@@ -16,6 +16,7 @@ Official repository for the [Human-Machine Dialogue (HMD)](https://disi.unitn.it
   - [Create Hugging Face access token](#create-hugging-face-access-token)
 - [Running the code](#running-the-code)
   - [Using another model](#using-another-model)
+- [FAQ](#faq)
 - [License](#license)
 
 
@@ -141,6 +142,13 @@ Finally, run the project and specify the model name:
 ```shell
 python -m main --model-name your_model
 ```
+
+## FAQ
+- *Can I use my own resources/external services (e.g., Groq, Ollama, llama.cpp) for the project?* Yes, you can also use them if you want. Consider the fact that we will offer support only for Azure.
+- *I cannot connect to Azure, what should I do?* Check the list below
+  1. Turn off the VPN (i.e., Global Protect)
+  2. Reset the password and try connecting again
+  3. If the problem persists, send an email to alessandro.tomasi@unitn.it (put s.alghisi@unitn.it in CC)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
