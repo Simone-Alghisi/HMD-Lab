@@ -48,7 +48,7 @@ Please, refer to the link below for the complete project structure.
 To be admitted to the exam, you must submit all materials listed below no later than 7 days before the exam date:
 
 1. Code Repository (on Github or Google Drive)
-2. [Project Report]((https://docs.google.com/document/d/1WMZdjussMGK2BatA4sA50h3GhmxR3a8usREyfJmST5I/edit?usp=sharing)) (max 4 pages, references and appendix excluded)
+2. [Project Report](https://docs.google.com/document/d/1WMZdjussMGK2BatA4sA50h3GhmxR3a8usREyfJmST5I/edit?usp=sharing) (max 4 pages, references and appendix excluded)
 3. Live Demo or Video Recordings (showing the system capabilities, such as fallback policy, mixed initiative, and over-/under-informative users)
 
 > [!TIP]
