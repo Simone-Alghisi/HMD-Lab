@@ -6,6 +6,7 @@ Official repository for the [Human-Machine Dialogue (HMD)](https://disi.unitn.it
 > [!CAUTION]
 > For any issue, write an email to s.alghisi@unitn.it and include mahed.mousavi@unitn.it in cc.
 
+- [Exam](#exam)
 - [Getting started](#getting-started)
   - [Azure](#azure)
     - [Setup](#setup)
@@ -18,6 +19,54 @@ Official repository for the [Human-Machine Dialogue (HMD)](https://disi.unitn.it
   - [Using another model](#using-another-model)
 - [FAQ](#faq)
 - [License](#license)
+
+
+## Exam
+This course is project-based only. Your final assessment is entirely determined by the quality of your project and the associated exam discussion. Please read the following guidelines carefully.
+
+> [!CAUTION]
+> You must:
+> - register on Esse3
+> - submit your exam with all the required material
+> 
+> **no later than 7 days** before the exam date. No extensions allowed.
+
+
+<!-- omit from toc -->
+### Project Overview
+Your project must focus on the design, implementation, and evaluation of a conversational system. This includes:
+- System Design: Architecture, components, motivation, intended users.
+- Implementation: Prompts and additional/external data (e.g., databases or API)
+- Evaluation: Evaluation data, automatic and human evaluation, and error analysis.
+
+Please, refer to the link below for the complete project structure.
+
+
+<!-- omit from toc -->
+### Required Deliverables
+
+To be admitted to the exam, you must submit all materials listed below no later than 7 days before the exam date:
+
+1. Code Repository (on Github or Google Drive)
+2. [Project Report]((https://docs.google.com/document/d/1WMZdjussMGK2BatA4sA50h3GhmxR3a8usREyfJmST5I/edit?usp=sharing)) (max 4 pages, references and appendix excluded)
+3. Live Demo or Video Recordings (showing the system capabilities, such as fallback policy, mixed initiative, and over-/under-informative users)
+
+> [!TIP]
+> A video demonstration is strongly recommended as it is more reliable and easier to present.
+> 
+
+
+<!-- omit from toc -->
+### Project Submission
+Submit all of the required materials no later than 7 days before the exam date to s.alghisi@unitn.it (include mahed.mousavi@unitn.it in cc).
+
+
+<!-- omit from toc -->
+### Exam Format
+During the exam, you will:
+- Present your system (live or via video)
+- Answer questions about design choices, methods, evaluation, limitations, and improvements
+- Demonstrate understanding of the underlying concepts taught in the course
 
 
 ## Getting started
