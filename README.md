@@ -4,7 +4,7 @@
 Official repository for the [Human-Machine Dialogue (HMD)](https://disi.unitn.it/~riccardi/page7/styled-3/page16.html) course at the University of Trento.
 
 > [!CAUTION]
-> For any issue, write an email to s.alghisi@unitn.it and include mahed.mousavi@unitn.it in cc.
+> For any issue, write an email to s.alghisi@unitn.it and include christian.moiola@unitn.it in cc.
 
 - [Exam](#exam)
 - [Getting started](#getting-started)
@@ -58,7 +58,7 @@ To be admitted to the exam, you must submit all materials listed below no later 
 
 <!-- omit from toc -->
 ### Project Submission
-Submit all of the required materials no later than 7 days before the exam date to s.alghisi@unitn.it (include mahed.mousavi@unitn.it in cc).
+Submit all of the required materials no later than 7 days before the exam date to s.alghisi@unitn.it (include christian.moiola@unitn.it in cc).
 
 
 <!-- omit from toc -->
@@ -197,7 +197,7 @@ python -m main --model-name your_model
 - *I cannot connect to Azure, what should I do?* Check the list below
   1. Turn off the VPN (i.e., Global Protect)
   2. Reset the password and try connecting again
-  3. If the problem persists, send an email to alessandro.tomasi@unitn.it (put s.alghisi@unitn.it in CC)
+  3. If the problem persists, send an email to alessandro.tomasi@unitn.it (put s.alghisi@unitn.it and christian.moiola@unitn.it in CC)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
