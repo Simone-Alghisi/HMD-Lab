@@ -71,38 +71,81 @@ During the exam, you will:
 
 ## Getting started
 This section guides you through the necessary steps to run the code.
-### Azure
-As a first step, you need to register with Azure and log in to your virtual machine.
 
-> [!CAUTION]
-> Remember to **turn off** your virtual machine on Azure every time you finish using it to avoid unnecessary resource usage.
+
+### Azure
+
+As a first step, you need to log in to Azure, claim a virtual machine, and configure your SSH connection.
+
+> ⚠️ **Important:** Each student has a quota of **50 hours** of virtual machine usage.
+> Always remember to **stop your virtual machine from the Azure Portal** when you finish working to preserve your usage quota.
+> Simply closing the SSH connection or VS Code does not stop the virtual machine.
 
 #### Setup
-You should have received an email on your Unitn account. Open it and follow the steps below:
-1. Click on the **"Register for the lab"** button.
-2. Log in using your **Unitn email** credentials.
-3. On the Azure Lab Services page, click the **slider** to turn on your virtual machine.
-4. Click the **monitor icon** on the right of the slider, set a **password**, and **save it** for later use.
 
-#### Log in
-You can access your machine by logging in to [Azure Lab Services](https://labs.azure.com) using your Unitn account, then:
+You should have received an email in your Unitn inbox containing the information required to access your virtual machine.
 
-1. Click the **slider** to power on your machine.
-2. Click the **monitor icon** on the right of the slider and copy the provided **SSH command**.
-3. Open a terminal, paste the command, confirm adding the host to your known list, and log in using the password you set earlier.
+Follow these steps:
 
-#### VSCode (optional)
-You can also log in directly from Visual Studio Code (VSCode) using the following procedure:
+1. Open the [Azure Portal](https://portal.azure.com/).
+2. Log in using your **Unitn email credentials**.
+3. Search for and open the **DevTest Labs** service.
+4. Access the **CorsoHMD-Riccardi-US** lab.
+5. Expand the **My Lab** menu and select **Claimable virtual machines**.
+6. Select an available virtual machine, click the three-dot menu, and claim the machine.
+7. Once claimed, your virtual machine will be available in the **Overview** section of the lab.
+8. Select your virtual machine and use the **Start** and **Stop** buttons to manage its power state.
 
-1. From the main menu, click **"Connect to..."**
-2. In the dropdown menu, select **"Connect to Host..."**
-3. Choose **"Add New SSH Host..."**
-4. Paste the SSH command.
-5. Add it to the default SSH configuration.
-6. Repeat steps 1 and 2, then connect to the new host using the password saved earlier.
+#### Connect via SSH
 
-### Clone the Repo
-You can clone this repository by running the following command:
+To connect to your virtual machine:
+
+1. Start your virtual machine from the Azure Portal.
+2. Click **Connect with SSH**.
+3. In the connection panel, locate the **Connect via password** section and copy the provided SSH command.
+4. Replace the `<vm-username>` placeholder with the actual username provided in the email.
+
+   The command should look like this:
+
+   ```bash
+   ssh username@ip-address
+   ```
+
+5. Open a terminal on your local computer and run the SSH command.
+6. When connecting for the first time, confirm that you want to add the host to your list of known hosts by typing `yes`.
+7. Enter the password provided in the email.
+
+After your first login, you must change your password by running:
+
+```bash
+passwd
+```
+
+Follow the instructions in the terminal and securely store your new password for future use.
+
+> **Note:** You have administrator privileges (`sudo`) on your virtual machine.
+> Currently, only the NVIDIA drivers are preinstalled. You will need to install any additional software and dependencies required for the lab activities.
+
+#### VS Code (Optional)
+
+You can also connect to your virtual machine directly from Visual Studio Code (VS Code) using the **Remote - SSH** extension.
+
+1. Open VS Code.
+2. Install the **Remote - SSH** extension from Microsoft.
+3. Open the Command Palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS).
+4. Select **Remote-SSH: Connect to Host...**.
+5. Select **Add New SSH Host...**.
+6. Paste your SSH command, making sure it contains the correct username and IP address.
+7. Select the default SSH configuration file to save the connection.
+8. Open the Command Palette again and select **Remote-SSH: Connect to Host...**.
+9. Select your newly configured host and enter your password when prompted.
+
+> 💡 Once VS Code has been configured, you only need to start your virtual machine from the Azure Portal and select the saved SSH host to reconnect.
+
+### Clone the Repository
+
+Once connected to your virtual machine, open a terminal and clone this repository by running:
+
 ```bash
 git clone https://github.com/Simone-Alghisi/HMD-Lab.git
 ```
