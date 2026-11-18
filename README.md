@@ -153,7 +153,7 @@ git clone https://github.com/Simone-Alghisi/HMD-Lab.git
 ### Installation
 
 > [!IMPORTANT]
-> Ensure that you have [conda](https://www.anaconda.com/docs/getting-started/miniconda/install#linux-2) installed before proceeding.
+> Ensure that you have Miniconda [conda](https://www.anaconda.com/docs/getting-started/miniconda/install#linux-2) installed before proceeding.
 
 Create a Python environment using the following command:
 ```shell
@@ -164,6 +164,13 @@ In the repository folder, activate the environment and install the required pack
 ```shell
 conda activate hmd
 pip install -r requirements.txt
+```
+
+After installing all the required packages, remove any remaining pip and Conda package caches:
+
+```shell
+pip cache purge
+conda clean --all -y
 ```
 
 ### Create Hugging Face access token
